@@ -1,0 +1,15 @@
+DataBaseOpera指令整理
+1、SQL指令（以select,insert,update,delete 开头的语句）
+2、[lookup all_tables] 查看数据库所有的表
+3、[lookup table xxx] xxx是指表名，查看该表的数据结构
+	例子： 要查看名为person表的数据结构
+	lookup table person
+4、[更换数据源]  此命令用于切换数据库数据源，即 重新登录
+
+5、[退出] 此命令用于退出当前系统
+
+6、[搜索 XXX]  XXX是要搜索的参数，
+	此命令会搜索整个数据中包含该字段的列并打印输出
+7、[设置 日志 XXX] XXX是日志的输出位置
+	例子：要把输出位置改为D://log.txt
+		[设置 日志 D://log.txt]

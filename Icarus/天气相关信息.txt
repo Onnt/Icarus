@@ -1,0 +1,20 @@
+=1yScNbEm4R2rhE-
+
+https://api.caiyunapp.com/v2/=1yScNbEm4R2rhE-/121.6544,25.1552/realtime.json
+
+https://api.caiyunapp.com/v2/=1yScNbEm4R2rhE-/121.6544,25.1552/realtime.jsonp?callback=MYCALLBACK
+
+
+常量
+SkyconsEnum
+CLEAR_DAY：晴天
+CLEAR_NIGHT：晴夜
+PARTLY_CLOUDY_DAY：多云
+PARTLY_CLOUDY_NIGHT：多云
+CLOUDY：阴
+RAIN： 雨
+SLEET：冻雨
+SNOW：雪
+WIND：风
+FOG：雾
+HAZE：霾
