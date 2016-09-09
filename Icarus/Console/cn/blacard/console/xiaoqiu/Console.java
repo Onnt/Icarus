@@ -1,6 +1,7 @@
 package cn.blacard.console.xiaoqiu;
 
 import cn.blacard.console.DB_Opera.DBOpera;
+import cn.blacard.console.FILE_Opera.FileOpera;
 
 public class Console {
 	public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Console {
 			DBOpera.start();
 			break;
 		case "文件管理" :
-			Qiu.say("文件管理的暂时还没完善好呢Master");
+			FileOpera.start();
 			break;
 		case "other" :
 			break;

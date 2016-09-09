@@ -3,8 +3,8 @@ package cn.blacard.console.xiaoqiu;
 import java.util.List;
 
 import cn.blacard.dbopera.Setting;
-import cn.blacard.nymph.file.out.TextOut;
 import cn.blacard.nymph.inputAndOutput.MasterInput;
+import cn.blacard.nymph.text.TextOut;
 
 /**
 @author  Blacard

@@ -1,11 +1,10 @@
 package db.gate;
 
 import java.util.List;
-import java.util.Scanner;
 
 import cn.blacard.console.xiaoqiu.Qiu;
 import cn.blacard.dbopera.entity.SearchResultEntity;
-import cn.blacard.nymph.file.out.TextOut;
+import cn.blacard.nymph.text.TextOut;
 import db.plugs.constant.OperaOfSearchConstant;
 import db.service.impl.OperaOfSearch;
 

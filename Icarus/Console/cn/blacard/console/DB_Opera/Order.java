@@ -10,7 +10,7 @@ public class Order extends OrderDeal{
 	private static Logger log = Logger.getLogger(Order.class.getName());
 	private static Query query = new Query();
 	
-	public static void deal(String[] orders){
+	protected static void deal(String[] orders){
 
 		switch(orders[0]){
 		
@@ -51,14 +51,11 @@ public class Order extends OrderDeal{
 			System.exit(0);
 			
 		default :
-			Qiu.say("Oh My Master ,您输的都是什么鬼(つಥ㉨ಥ)つ      :"+new OrderDeal().toQuery(orders));
+			Qiu.say("Oh My Master ,您输的都是什么鬼(つಥ㉨ಥ)つ      :"+OrderDeal.toQuery(orders));
 		}
 	}
 	
-	
-	
-	//��ȡ��ݿ����Ӳ���
-	public static DBConnectPara getDBPara(){
+	protected static DBConnectPara getDBPara(){
 		DBConnectPara dbPara = getDBConnectPara(Qiu.getOrders("Master,请您依次输入 数据库类型，地址，库名，账号，密码。 喵~＞▽＜~"));
 		if(dbPara == null){
 			log.info("��ݿ����Ӳ����ȡʧ�ܣ����������Ƿ�����");
