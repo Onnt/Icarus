@@ -33,10 +33,6 @@ public class OrderDeal {
 		}
 	}
 	
-	protected static void filterByLesserThan(String[] orders){
-		
-	}
-	
 	protected static void filterBySuffix(String[] orders){
 		
 	}

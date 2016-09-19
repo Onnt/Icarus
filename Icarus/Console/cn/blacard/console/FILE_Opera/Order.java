@@ -6,9 +6,6 @@ import cn.blacard.console.xiaoqiu.Qiu;
 public class Order extends OrderDeal{
 	protected static void deal(String[] orders){
 		switch(orders[0]){
-		case "test":
-			Qiu.say("文件操作测试");
-			break;
 		case "see":
 			see(orders);
 			break;
@@ -40,6 +37,10 @@ public class Order extends OrderDeal{
 		switch(orders[2]){
 		case ">" :
 		case "<":
+			if(orders.length < 4){
+				Qiu.say(QIUSTRING.INPUTERROR);
+				return;
+			}
 			filterBySize(orders);
 			break;
 		case "suffix":
