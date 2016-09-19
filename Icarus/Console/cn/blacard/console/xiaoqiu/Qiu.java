@@ -5,12 +5,12 @@ import java.util.List;
 import cn.blacard.dbopera.Setting;
 import cn.blacard.nymph.inputAndOutput.MasterInput;
 import cn.blacard.nymph.text.TextOut;
-
 /**
-@author  Blacard
-���䣺blacard@163.com
-@date ����ʱ�䣺2016��7��29�� ����2:23:50 
-  */
+ * 
+ * @author Blacard
+ * @联系方式 邮箱：blacard@163.com <br/> 手机：18037170703
+ * @create 2016年9月19日 下午3:02:56
+ */
 public class Qiu {
 	
 	public static void say(String word){
@@ -60,7 +60,7 @@ public class Qiu {
 	
 	
 	public static String[] getOrders(){
-		say("请主人命令我做些什么事情吧~ 喵~＞▽＜");
+		say(QIUSTRING.PLEASE_ORDER_ME);
 		return MasterInput.getMasterInputs();
 	}
 	public static String[] getOrders(String alert){

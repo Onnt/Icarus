@@ -4,7 +4,7 @@ import cn.blacard.console.xiaoqiu.Qiu;
 
 public class FileOpera {
 	public static void start(){
-		CurrSystem.outInfo();
+		OrderDeal.curSystemInfo();
 		while(true){
 			String[] orders = Qiu.getOrders();
 			Order.deal(orders);

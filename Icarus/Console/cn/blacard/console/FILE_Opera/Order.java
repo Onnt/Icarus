@@ -1,5 +1,6 @@
 package cn.blacard.console.FILE_Opera;
 
+import cn.blacard.console.xiaoqiu.QIUSTRING;
 import cn.blacard.console.xiaoqiu.Qiu;
 
 public class Order extends OrderDeal{
@@ -11,12 +12,15 @@ public class Order extends OrderDeal{
 		case "see":
 			see(orders);
 			break;
+		case "filter":
+			filter(orders);
+			break;
 		case "退出":
 			Qiu.say("主人再见~ (o^0^o)/~~~~~~~バイバ～イ！！");
 			System.exit(0);
 			break;
 		default :
-			Qiu.say("Oh My Master ,您输的都是什么鬼(つಥ㉨ಥ)つ");
+			Qiu.say(QIUSTRING.INPUTERROR);
 		}
 	}
 	
@@ -32,13 +36,23 @@ public class Order extends OrderDeal{
 	
 	
 	
-	
-	
+	protected static void filter(String[] orders){
+		switch(orders[2]){
+		case ">" :
+		case "<":
+			filterBySize(orders);
+			break;
+		case "suffix":
+			filterBySuffix(orders);
+			break;
+			default :Qiu.say(QIUSTRING.INPUTERROR);
+		}
+	}
 	
 	protected static void see(String[] orders){
 		switch(orders[1]){
 			case "sysinfo" :
-				CurrSystem.outInfo();
+				curSystemInfo();
 				break;
 			default : ;
 		}
